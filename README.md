@@ -1,1 +1,1 @@
-Ссылка на деплой - [тык](https://technopark-olive.vercel.app/)
+Ссылка на деплой - [тык](https://technopark-g2hq.vercel.app/)
