@@ -3,6 +3,12 @@ export default event => {
         const burger = event.target.closest('#headerBurger');
         const header = document.getElementById('header');
 
+        if (!header.className.includes('blur')) {
+            document.body.style = 'overflow: hidden; height: 100vh;';
+        } else {
+            console.log('sd');
+            document.body.style = '';
+        }
         burger.classList.toggle('active');
         header.classList.toggle('blur');
     }
