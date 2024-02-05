@@ -397,7 +397,7 @@ h6 {
   flex: 0 0 9em;
 }
 .header__brands-item:nth-child(3) {
-  font-size: 12px;
+  font-size: 28px;
 }
 .header__brands-image {
   position: absolute;
@@ -422,10 +422,11 @@ h6 {
   gap: 1px;
 }
 .header__brands-text {
-  font-size: 7px;
+  font-size: 0.45em;
   display: flex;
   align-items: center;
   gap: 2px;
+  line-height: 1em;
 }
 .header__brands-text span {
   font-weight: 800;
@@ -482,6 +483,7 @@ h6 {
 .main__sale-button span {
   color: #b15fff;
   font-weight: 600;
+  font-size: 16px;
 }
 .main__prise-new {
   font-size: 2em;
@@ -522,15 +524,20 @@ h6 {
   font-weight: 600;
   display: inline-flex;
 }
+.main__pay-title span div {
+  margin: 0 2px;
+}
 .main__pay-button {
   background-color: #b0fde4;
   border-radius: 8px;
   font-weight: 600;
-  padding: 15px;
+  padding: 14px;
   position: relative;
+  font-size: 16px;
 }
 .main__pay-text {
   color: #717271;
+  font-size: 0.875em;
 }
 .main__pay-popap {
   transition: 0.3s;
@@ -681,9 +688,11 @@ h6 {
 }
 .main__brands-list picture img {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translate(0, -50%);
   left: 0;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -706,6 +715,8 @@ h6 {
   height: -moz-fit-content;
   height: fit-content;
   transition: 0.3s;
+  font-size: 0.5em;
+  line-height: 1.5em;
 }
 .footer__text.hidden {
   display: -webkit-box;

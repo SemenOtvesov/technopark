@@ -44,6 +44,7 @@
         & span {
             color: $purpure;
             font-weight: 600;
+            font-size: 16px;
         }
     }
 
@@ -88,6 +89,9 @@
             & span {
                 font-weight: 600;
                 display: inline-flex;
+                & div {
+                    margin: 0 2px;
+                }
             }
         }
 
@@ -95,12 +99,14 @@
             background-color: $aquamarine;
             border-radius: 8px;
             font-weight: 600;
-            padding: 15px;
+            padding: 14px;
             position: relative;
+            font-size: 16px;
         }
 
         &-text {
             color: #717271;
+            font-size: 0.875em;
         }
 
         &-popap {
@@ -277,9 +283,11 @@
                 position: relative;
                 & img {
                     position: absolute;
-                    top: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
                     left: 0;
-                    height: 100%;
+                    max-width: 100%;
+                    max-height: 100%;
                     object-fit: cover;
                 }
             }

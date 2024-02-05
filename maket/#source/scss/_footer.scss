@@ -12,6 +12,8 @@
         text-align: center;
         height: fit-content;
         transition: 0.3s;
+        font-size: 0.5em;
+        line-height: 1.5em;
 
         &.hidden {
             display: -webkit-box;
